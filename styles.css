@@ -1,25 +1,9 @@
+@import url(normalize.css);
 * {
   padding: 0;
   margin: 0;
   font-family: "Lexend", sans-serif;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 0;
   box-sizing: border-box;
-}
-
-.plano-bg {
-  position: absolute;
-  top: 10%;
-  left: 45%;
-  width: 50rem;
-  height: 50rem;
-  z-index: 1;
 }
 
 nav {
@@ -30,8 +14,6 @@ nav {
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  box-sizing: border-box;
-  z-index: 2;
 }
 nav img {
   width: 15%;
@@ -55,15 +37,13 @@ nav .menu button {
 }
 
 .container-intro {
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
   height: 100vh;
   width: 100vw;
   max-width: 482px;
   max-height: 390px;
   min-width: 10rem;
   min-height: 10rem;
+  margin-left: 10px;
 }
 .container-intro .azul {
   background-color: #253342;
@@ -71,7 +51,8 @@ nav .menu button {
   border-radius: 20px;
   height: 100vh;
   max-height: 210px;
-  box-sizing: border-box;
+  display: flex;
+  align-items: center;
 }
 .container-intro .azul h1 {
   text-align: center;
@@ -85,7 +66,9 @@ nav .menu button {
   height: 100vh;
   max-height: 205px;
   box-sizing: border-box;
-  z-index: 2;
+  z-index: -1;
+  display: flex;
+  align-items: center;
 }
 .container-intro .cinza h1 {
   text-align: center;
