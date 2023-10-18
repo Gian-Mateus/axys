@@ -15,3 +15,7 @@
     box-sizing: border-box;
     font-family: 'Lexend Deca', 'Inter',sans-serif;
 }
+
+body{
+    background-color: var(--primary-color);
+}
