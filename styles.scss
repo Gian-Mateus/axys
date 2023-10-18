@@ -1,0 +1,98 @@
+@import url(normalize.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lexend', sans-serif;
+    box-sizing: border-box;
+}
+
+// Variáveis de Cores
+$darkblue: #253342;
+$darkgreen: #1C4B16;
+$greenOp: #3E5954;
+$white: #FFFFFF;
+$gray: #D9D9D9;
+
+// Variável para grupo de características únicas (centralização)
+
+
+// Tratando a Barra de navegação e seus elementos
+nav{
+    width: 100%;
+    margin: 10px 20px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
+    img{
+        width: 15%;
+        height: 15%;
+        min-width: 4rem;
+        min-height: 4rem;
+    }
+
+    .menu{
+        ion-icon{
+            width: 3rem;
+            height: 3rem;
+        }
+
+        button{
+          display: none;
+          border: 2px solid $white;
+          border-radius: 10px;
+          padding: 10px;
+          width: 110px;
+          min-width: 4rem;
+          color: $white;
+          background-color: $darkgreen;
+        }
+
+    }
+}
+
+// Tratando o primeiro container que há duas divs que uma ficará sobreposta a outra.
+.container-intro{
+    height: 100vh;
+    width: 100vw;
+    max-width: 482px;
+    max-height: 390px;
+    min-width: 10rem;
+    min-height: 10rem;
+    margin-left: 10px;
+
+    .azul{
+        background-color: $darkblue;
+        padding: 15px;
+        border-radius: 20px;
+        height: 100vh;
+        max-height: 210px;
+        display: flex;
+        align-items: center;
+        h1{
+            text-align: center;
+            color: $white;
+            font-weight: 500;
+            font-style: normal;
+        }
+    }
+    .cinza{
+        background-color: $gray;
+        border-radius: 20px;
+        height: 100vh;
+        max-height: 205px;
+        box-sizing: border-box;
+        z-index: -1;
+        display: flex;
+        align-items: center;
+        h1{
+            text-align: center;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 1.75rem;
+        }
+    }
+}
