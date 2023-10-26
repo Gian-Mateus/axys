@@ -1,21 +1,31 @@
+/* Importação dos estilos */
+/* Head */
+@import url('/styles-head.css');
+/* Seção 1 */
+@import url('/styles-section1.css');
 /* Definição de variáveis para padronização */
 :root{
     --primary-color: #000;
     --secondary-color: #f9f9f9;
-    --green-dark: #006312;
+    --green-dark: #00961b;
     
 }
 /* Importação Fontes */
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Lexend+Deca:wght@200;300;400;500;600;700;800;900&display=swap');
 /* Normalização do CSS e configurações globais */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lexend Deca', 'Inter',sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
 }
 
 body{
     background-color: var(--primary-color);
 }
+
+main{
+    padding-top: 70px;
+}
+/* Padrão de navegador */
+/* Fazer o mediaquery para telas no máximo de 480px */
