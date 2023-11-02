@@ -35,15 +35,15 @@ header nav ul li a{
     align-items: center;
     text-decoration: none;
     color: var(--secondary-color);
-    font-weight: 500;
+    font-weight: 300;
     position: relative;
     transition: color 0.8s ease;
 }
 header nav ul li a:hover{
     color: var(--green-dark);
-    font-weight: 600;
+    font-weight: 400;
     transition: color 0.3s ease;
-    filter: drop-shadow(0 0 15px #00961b) drop-shadow(0 0 30px #00961b) contrast(2) brightness(2);
+    filter: drop-shadow(0 0px 10px #00961b) drop-shadow(0 0 15px #00961b) contrast(2) brightness(2);
 }
 /* site com os hover: https://css-tricks.com/css-link-hover-effects/ */
 header nav ul li a::before{

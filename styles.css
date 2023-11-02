@@ -3,6 +3,9 @@
 @import url('/styles-head.css');
 /* Seção 1 */
 @import url('/styles-section1.css');
+/* Importação Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /* Definição de variáveis para padronização */
 :root{
     --primary-color: #000;
@@ -10,14 +13,12 @@
     --green-dark: #00961b;
     
 }
-/* Importação Fontes */
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400;500;600;700;800;900&display=swap');
 /* Normalização do CSS e configurações globais */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Lexend Deca', 'Inter', sans-serif;
 }
 
 body{

@@ -1,18 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 .introduction{
     color: var(--secondary-color);
     height: calc(100vh - 70px);
-    width: 100vw;
+    width: 100%;
     display: flex;
     
 }
-
 .infos{
     width: 50%;
     padding: 40px;
 }
 .infos h1{
-    font-size: 60px;
+    font-size: 3.75rem;
+}
+.infos h2{
+    font-size: 1.75rem;
+    font-weight: 300;
 }
 .carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
+    position: relative;
+}
+.carousel .item{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 60%;
+    height: 60%;
+    aspect-ratio: 4/3;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: rgba(143, 143, 143, 0.3) 0px 19px 38px, rgba(187, 192, 188, 0.22) 0px 15px 12px;
+}
+.carousel .item h3{
+    color: var(--primary-color);
+    font-weight: 600;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+}
+
+.carousel .efficiency{
+    background-image: url(assets/jpg/efficiency.jpg);
+    background-size: cover;
+    transform: scale(0.8);
+    right: 1px;
+}
+.carousel .strategy{
+    background-image: url(assets/jpg/strategy.jpg);
+    background-size: cover;
+    transform: scale(1.2);
+    z-index: 1;
+}
+.carousel .potential{
+    background-image: url(assets/jpg/potential.jpg);
+    background-size: cover;
+    transform: scale(0.8);
+    left: -1px;
 }
