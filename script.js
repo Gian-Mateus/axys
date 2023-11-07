@@ -2,7 +2,13 @@
 function getLastClass(array){
     return array[array.length - 1]
 }
-
+function alternate(array){
+    const classAll = [array[0], array[1], array[2]];
+    for(i = 0; i < 3; i++){
+        classAll[(i + 2) % 3] = array[i];
+    };
+    return classAll;
+}
 
 function alternateItems(){
     // aqui tenho que pegar o items[posição] para pegar a div e remover a última classe
@@ -18,24 +24,5 @@ function alternateItems(){
     }
     lastClassItems = newClasses
 }
-function alternate(array){
-    const classAll = [array[0], array[1], array[2]];
-    for(i = 0; i < 3; i++){
-        classAll[(i + 2) % 3] = array[i];
-    };
-    return classAll;
-}
+setInterval(alternateItems(), 4000);
 
-setInterval(() => {
-    alternateItems();
-}, 4000)
-
-// alternateItems();
-// function alternateItems(array){
-//     const classAll = [array[0], array[1], array[2]];
-//     for(i = 0; i < 3; i++){
-//         classAll[(i + 1) % 3] = array[i];
-//     };
-//     return classAll;
-// }
-// setInterval(alternateItems, 1500);
