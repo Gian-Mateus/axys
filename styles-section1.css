@@ -24,41 +24,51 @@
     width: 50%;
     position: relative;
 }
-.carousel .item{
+.carousel h3{
+    display: inline;
+    color: var(--primary-color);
+    font-weight: 600;
+    background-color: var(--green-dark);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.carousel .efficiency, .strategy, .potential{
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    text-align: center;
     width: 60%;
     height: 60%;
     aspect-ratio: 4/3;
     position: absolute;
-    border-radius: 10px;
-    box-shadow: rgba(143, 143, 143, 0.3) 0px 19px 38px, rgba(187, 192, 188, 0.22) 0px 15px 12px;
-}
-.carousel .item h3{
-    color: var(--primary-color);
-    font-weight: 600;
-    background-color: var(--secondary-color);
     border-radius: 5px;
-    text-align: center;
-    margin: 10px;
-}
-
-.carousel .efficiency{
-    background-image: url(assets/jpg/efficiency.jpg);
     background-size: cover;
-    transform: scale(0.8);
-    right: 1px;
+    /* box-shadow: rgba(143, 143, 143, 0.3) 0px 19px 38px, rgba(187, 192, 188, 0.22) 0px 15px 12px; */
+    box-shadow: #00961b4d 0px 19px 38px, rgba(0, 150, 27, 0.22) 0px 15px 12px;
+}
+.carousel .efficiency{
+    background-image: url(assets/jpg/Economic_Efficiency.png);
 }
 .carousel .strategy{
     background-image: url(assets/jpg/strategy.jpg);
-    background-size: cover;
-    transform: scale(1.2);
-    z-index: 1;
 }
 .carousel .potential{
     background-image: url(assets/jpg/potential.jpg);
-    background-size: cover;
+}
+.carousel .left{
     transform: scale(0.8);
-    left: -1px;
+    right: .75em;
+}
+.carousel .right{
+    transform: scale(0.8);
+    left: -.75em;
+}
+.carousel .front{
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.carousel .item{
+    transition: all 1s ease-in-out;
 }
