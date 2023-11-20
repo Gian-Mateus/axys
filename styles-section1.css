@@ -28,7 +28,7 @@
     display: inline;
     color: var(--primary-color);
     font-weight: 600;
-    background-color: var(--green-dark);
+    background-color: var(--secondary-color);
     border-radius: 5px;
     margin: 10px;
 }
@@ -49,14 +49,35 @@
 }
 .carousel .efficiency{
     background-image: url(assets/jpg/Economic_Efficiency.png);
+    transform: scale(0.8);
+    left: -.75em;
+    animation: carouselAnimation 5s ease-in 5 forwards;
 }
 .carousel .strategy{
     background-image: url(assets/jpg/strategy.jpg);
+    transform: scale(0.8);
+    left: -.75em;
+    animation: carouselAnimation 5s ease-in 2s 5 forwards;
 }
 .carousel .potential{
     background-image: url(assets/jpg/potential.jpg);
+    transform: scale(0.8);
+    left: -.75em;
+    animation: carouselAnimation 5s ease-in 3s 5 forwards;
 }
-.carousel .left{
+
+@keyframes carouselAnimation {
+    25%{
+        transform: translate(10rem, 0) scale(1.2);
+        z-index: 1;
+    }
+    50%{
+        transform: translate(15rem, 0) scale(0.8);
+        z-index: 0;
+    }
+
+}
+/* .carousel .left{
     transform: scale(0.8);
     right: .75em;
 }
@@ -68,7 +89,20 @@
     transform: scale(1.2);
     z-index: 1;
 }
+ */
 
-.carousel .item{
-    transition: all 1s ease-in-out;
+/* @keyframes leftToCenter {
+    100% {
+        transform: translate(10rem, 0px) scale(1.2, 1.2);
+    }
 }
+@keyframes centerToRight {
+    100% {
+        transform: translate(5rem, 0px) scale(0.8, 0.8);
+    }
+}
+@keyframes rightToleft {
+    100% {
+        transform: translate(-10rem, 0px);
+    }
+} */
