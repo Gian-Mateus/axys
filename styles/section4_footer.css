@@ -1,0 +1,78 @@
+#footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 10px;
+    color: var(--secondary-color);
+    row-gap: 20px;
+}
+
+#footer .social{
+    display: flex;
+    gap: 10%;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer .social svg{
+    width: 2.3rem;
+    height: auto;
+    transition: fill 300ms ease-in-out, scale  300ms ease-in-out;
+}
+
+#footer .social svg:hover{
+    fill: var(--green-dark);
+    filter: drop-shadow(0 0 .2rem var(--green-dark)) brightness(2) contrast(2);
+    scale: 1.2;
+}
+
+#footer .social a{
+    text-decoration: none;
+}
+
+
+#footer .location{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
+    padding: 20px;
+}
+
+#footer .location .address>h4{
+    font-weight: 400;
+}
+#footer .location .address{
+    display: flex;
+    align-items: end;
+    gap: 2px;
+}
+
+#footer .location p{
+    font-weight: 300;
+}
+
+#footer .location img{
+    width: 1.5rem;
+}
+#footer iframe{
+    border: none;
+    width: 100%;
+    max-width: 300px;
+    max-height: 200px;
+    margin: 0 auto;
+}
+
+.foot{
+    margin-top: 32px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.copy{
+    font-weight: 100;
+    font-size: .75rem;
+}

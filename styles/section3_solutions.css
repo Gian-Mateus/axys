@@ -1,0 +1,112 @@
+.solutions {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-solutions {
+    width: 100%;
+    max-width: 960px;
+    margin: 78px 40px;
+    align-items: center;
+    color: var(--primary-color);
+    gap: 15px;
+    display: grid;
+    grid-template-areas:"card1 card1 card2 card2 card3 card3"
+                        ". card4 card4 card5 card5 .";
+    justify-content: space-evenly;
+}
+
+.main-solutions > :nth-child(1){ grid-area: card1;}
+.main-solutions > :nth-child(2){grid-area: card2;}
+.main-solutions > :nth-child(3){grid-area: card3;}
+.main-solutions > :nth-child(4){grid-area: card4;}
+.main-solutions > :nth-child(5){grid-area: card5;}
+
+
+.card-container {
+    height: 100%;
+    min-width: 250px;
+    transition: scale .3s ease-in-out;
+    z-index: 1;
+}
+.card-container:hover{
+    scale: 1.1;
+    z-index: 2;
+}
+.card-container:hover > .card-title{
+    filter: drop-shadow(0 0px 5px #00961b) contrast(2) brightness(1.2);
+}
+.card-title{
+    border-radius: 5px;
+    background-color: #00961b;
+    filter: drop-shadow(0 0px 5px #00961b) contrast(2);
+    min-height: 174px;
+}
+
+.card-title img{
+    width: 100px;
+}
+
+.card-body{
+    padding: 8px;
+    color: #fff;
+    border-radius: 0 0 5px 5px;
+    min-height: 162px;
+    transition: box-shadow 300ms ease;
+}
+.card-container:hover > .card-body{
+    box-shadow: 0px 0px 12px #f9f9f970;
+    background-color: #0c0c0c;
+}
+
+
+.card-container h4 {
+    text-align: start;
+    padding: 20px 0 10px 10px;
+}
+.card-body ul{
+    padding-top: 10px;
+}
+.card-container li{
+    list-style: none;
+}
+
+.card-container li::before{
+    content: url(../assets/svg/arrow-right.svg);
+    margin-right: 5px;
+    width: 6px;
+    display: inline-block;
+}
+
+.card-container p{
+    text-align: start;
+}
+
+/* Mobile Version */
+
+@media only screen and (max-width: 860px){
+
+.main-solutions{
+    grid-template-areas: 'card1 card2'
+                        'card3 card4'
+                        'card5 card5';
+}
+.card-container{
+    width: 20rem;
+}
+
+}
+
+@media only screen and (max-width: 700px){
+
+.main-solutions{
+    grid-template-areas: 'card1'
+                        'card2'
+                        'card3'
+                        'card4'
+                        'card5';
+}
+
+}

@@ -3,45 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/global.css">
     <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
     <title>Axys - Consultoria Empresarial</title>
 </head>
 <body>
 <header>
     <div class="image">
-        <img src="assets/svg/logo-white.svg" alt="Logo Axys">
+        <a href="#"><img src="assets/svg/logo-white.svg" alt="Logo Axys"></a>
     </div>
     <nav>
         <ul>
-            <li><a href="#">HOME</a></li>
+            <li><a href="#introduction">HOME</a></li>
             <li><a href="#about">SOBRE NÓS</a></li>
             <li><a href="#solutions">SOLUÇÕES</a></li>
             <li><a href="#footer">CONTATO</a></li>
         </ul>
     </nav>
+    <button class="btn-nav"><img src="assets/svg/menu-icon.svg" alt=""></button>
 </header>
 
         <main>
-            <section class="introduction">
+            <section class="introduction" id="introduction">
                 <div class="infos">
+                    <div class="title-infos"></div>
                     <h1>Axys</h1>
-                    <h2>Consultoria Empresarial, <br>Acessoria e Terceirização de Gestão</h2>
+                    <h2>Consultoria Empresarial, <br>Acessoria e Terceirização de Gestão.</h2>
+                    <div class="main-infos">
+                        <div class="efficiency">
+                            <h6>Aumente sua eficiência operacional e reduza custos</h6>
+                        </div>
+                        <div class="strategy">
+                            <h6>Tenha acesso a informações estratégicas para tomada de decisões assertivas</h6>
+                        </div>
+                        <div class="potential">
+                            <h6>Maximize o potencial dos seus recursos humanos e promova um ambiente de trabalho saudável</h6>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="carousel">
-                    <div class="item efficiency left"><h3>Aumente sua eficiência operacional e reduza custos</h3>
-                    </div>
-                    <div class="item strategy front"><h3>Tenha acesso a informações estratégicas para tomada de decisões assertivas</h3>
-                    </div>
-                    <div class="item potential right"><h3>Maximize o potencial dos seus recursos humanos e promova um ambiente de trabalho saudável</h3>
-                    </div>
+                    <img src="assets/jpg/digital-increasing-bar-graph-with-businessman-hand-overlay.jpg" class="item efficiencyImg left"></img>
+                    <img src="assets/jpg/strategy.jpg" class="item strategyImg front"></img>
+                    <img src="assets/jpg/potential.jpg" class="item potentialImg right"></img>
                 </div>
             </section>
 
             <section class="about" id="about">
-                <div class="main-about">
-                    <h3>Alguma coisa sobre o Thiago Firmo ou Gian Mateus</h3>
+                <div class="ceos">
+                    <div class="image-ceo">
+                        <img src="assets/jpg/thiago.jpeg" alt="">
+                        <blockquote>
+                            <h4>"Como gestor, defendo que a adoção de uma visão holística
+                                organizacional é essencial para o sucesso de um negócio."</h4>
+                            <footer>Thiago Firmo | CEO</footer>
+                        </blockquote>
+                    </div>
+                    <div class="about-ceo">
+                        <div class="about-us">
+                            <span>Thiago Firmo:</span>
+                        </div>
+                        <div class="education">
+                            <p>
+                                Com bacharelado em Administração e certificações em Consultoria Empresarial e Gestão de Processos com BPM, a carreira de Thiago Firmo é fundamentada na busca pela excelência na gestão empresarial. 
+                            </p>
+                        </div>
+                        <div class="experience">
+                            Com seis anos de experiência em rotinas administrativas e notável vivência em consultoria empresarial, Thiago demonstra expertise na organização e otimização de processos internos, aliada a uma visão estratégica adquirida através do trabalho direto com diversas organizações.
+                        </div>
+                    </div>
+                </div>
+                <div class="ceos">
+                    <div class="image-ceo">
+                        <img src="assets/jpg/gian.jpeg" alt="">
+                        <blockquote>
+                            <h4>"Tecnologia é uma ferramenta. Prezo por utilizarmos da forma correta."</h4>
+                            <footer>Gian Mateus | Co-CEO</footer>
+                        </blockquote>
+                    </div>
+                    <div class="about-ceo">
+                        <div class="about-us">
+                            <span>Gian Mateus da Silveira:</span>
+                        </div>
+                        <div class="education">
+                            <p>
+                                Formado em Análise e Desenvolvimento de Sistemas, traz para o meio administrativo uma visão tecnólogica e ferramentas alcançar a eficácia dos processos. 
+                            </p>
+                        </div>
+                        <div class="experience">
+                            Desde os 18 anos trabalhando com rotinas administrativas, sempre trabalhou para com que os processos fossem mais assertivos e eficientes. Por ter trabalhado em diversos setores administrativos, traz um olhar abrangente em frente a processos.
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -49,89 +101,131 @@
                 <div class="main-solutions">
 
                     <div class="card-container">
-                        <div class="card">
-                            <h4><b>Diagnóstico Empresarial</b></h4>
-                            <p>Descubra os pontos fortes e áreas de melhoria da sua empresa.</p>
-                            <br>
-                            <ul>
-                                <li>Funcionamento Real</li>
-                                <li>Paralegal</li>
-                                <li>RH</li>
-                                <li>Enquadramento de Porte / Tipo Societário</li>
-                            </ul>
-                        </div>
-                            <a href="">SOLICITE</a>
+                            <div class="card-title">
+                                <img src="assets/svg/doctor-health-medical-stethoscope-svgrepo-com.svg" alt="estetoscópio">
+                                <h4>Diagnóstico Empresarial</h4>
+                            </div>
+                            <div class="card-body">
+                                <p>Descubra os pontos fortes e áreas de melhoria da sua empresa.</p>
+                                <ul>
+                                    <li>Funcionamento Real</li>
+                                    <li>Paralegal</li>
+                                    <li>RH</li>
+                                    <li>Enquadramento de Porte / Tipo Societário</li>
+                                </ul>
+                            </div>
                     </div>
 
                     <div class="card-container">
-                        <div class="card">
-                            <h4><b>Serviços Financeiros</b></h4>
-                            <p>Tenha o controle total das suas finanças e fluxo de caixa.</p>
-                            <br>
-                            <ul>
-                                <li>Contas a pagar/receber (DDA)</li>
-                                <li>Dashboard</li>
-                                <li>Fluxo de caixa</li>
-                                <li>Malote contábil</li>
-                            </ul>
-                        </div>
-                            <a href="">SOLICITE</a>
+                            <div class="card-title">
+                                <img src="assets/svg/business-finance-corporate-26-svgrepo-com.svg" alt="">
+                                <h4>Serviços Financeiros</h4>
+                            </div>
+                            <div class="card-body">
+                                <p>Tenha o controle total das suas finanças e fluxo de caixa.</p>
+                                <ul>
+                                    <li>Contas a pagar/receber (DDA)</li>
+                                    <li>Dashboard</li>
+                                    <li>Fluxo de caixa</li>
+                                    <li>Malote contábil</li>
+                                </ul>
+                            </div>
                     </div>
 
                     <div class="card-container">
-                        <div class="card">
-                            <h4><b>Auxílio Paralegal</b></h4>
-                            <p>Garanta a conformidade legal e obtenha os alvarás necessários.</p>
-                            <br>
-                            <ul>
-                                <li>Alvarás</li>
-                                <li>CNES</li>
-                                <li>CRO (PF e PJ)</li>
-                                <li>Controle de seguros</li>
-                            </ul>
-                        </div>
-                            <a href="">SOLICITE</a>
+                            <div class="card-title">
+                                <img src="assets/svg/justice-svgrepo-com.svg" alt="">
+                                <h4>Auxílio Paralegal</h4>
+                            </div>
+                            <div class="card-body">
+                                <p>Garanta a conformidade legal e obtenha os alvarás necessários.</p>
+                                <ul>
+                                    <li>Alvarás</li>
+                                    <li>CNES</li>
+                                    <li>CRO (PF e PJ)</li>
+                                    <li>Controle de seguros</li>
+                                </ul>
+                            </div>
                     </div>
 
                     <div class="card-container">
-                        <div class="card">
-                            <h4><b>Gestão de Recursos Humanos</b></h4>
-                            <p>Simplifique os processos de RH e otimize a gestão de pessoal.</p>
-                            <br>
-                            <ul>
-                                <li>Controle Ponto</li>
-                                <li>Documentação</li>
-                                <li>Recrutamento</li>
-                            </ul>
-                        </div>
-                            <a href="">SOLICITE</a>
+                            <div class="card-title">
+                                <img src="assets/svg/management-svgrepo-com.svg" alt="" style="padding: 10px 0 0 10px;">
+                                <h4>Gestão de Recursos Humanos</h4>
+                            </div>
+                            <div class="card-body">
+                                <p>Simplifique os processos de RH e otimize a gestão de pessoal.</p>
+                                <ul>
+                                    <li>Controle Ponto</li>
+                                    <li>Documentação</li>
+                                    <li>Recrutamento</li>
+                                </ul>
+                            </div>
                     </div>
 
                     <div class="card-container">
-                        <div class="card">
-                            <h4><b>Terceirização de Gestão</b></h4>
-                            <p>Gerencie eficientemente seu faturamento, acompanhe a área societária e controle seu patrimônio.</p>
-                            <br>
-                            <ul>
-                                <li>Faturamento</li>
-                                <li>Todos os pacotes</li>
-                                <li>Acompanhamento societário</li>
-                                <li>Controle patrimonial</li>
-                            </ul>
-                        </div>
-                            <a href="">SOLICITE</a>
+                            <div class="card-title">
+                                <img src="assets/svg/deal-svgrepo-com.svg" alt="" style="padding: 10px 0 0 10px;">
+                                <h4>Terceirização de Gestão</h4>
+                            </div>
+                            <div class="card-body">
+                                <p>Gerencie eficientemente seu faturamento, acompanhe a área societária e controle seu patrimônio.</p>
+                                <ul>
+                                    <li>Faturamento</li>
+                                    <li>Todos os pacotes</li>
+                                    <li>Acompanhamento societário</li>
+                                    <li>Controle patrimonial</li>
+                                </ul>
+                            </div>
                     </div>
-
                 </div>
             </section>
         </main>
         <footer id="footer">
-            <div class="links">
-                <h6>Instagram</h6>
-                <h6>WhatsApp</h6>
-                <h6>E-mail</h6>
+            <div><h3>Entre em contato conosco pelas redes sociais</h3></div>
+                <div class="social">
+                    <a href="https://www.instagram.com/thagous/">
+                        <svg viewBox="0 0 24 24" <rect fill="#fff"></rect></rect>xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"/>
+<path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"/>
+                        </svg>
+
+                    </a>
+                    <a href="https://wa.me/554792858389/?text=Ol%C3%A1,%20comedor%20de%20casada">
+                        <svg viewBox="0 0 24 24" <rect fill="#fff"></rect></rect> xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.014 8.00613C6.12827 7.1024 7.30277 5.87414 8.23488 6.01043L8.23339 6.00894C9.14051 6.18132 9.85859 7.74261 10.2635 8.44465C10.5504 8.95402 10.3641 9.4701 10.0965 9.68787C9.7355 9.97883 9.17099 10.3803 9.28943 10.7834C9.5 11.5 12 14 13.2296 14.7107C13.695 14.9797 14.0325 14.2702 14.3207 13.9067C14.5301 13.6271 15.0466 13.46 15.5548 13.736C16.3138 14.178 17.0288 14.6917 17.69 15.27C18.0202 15.546 18.0977 15.9539 17.8689 16.385C17.4659 17.1443 16.3003 18.1456 15.4542 17.9421C13.9764 17.5868 8 15.27 6.08033 8.55801C5.97237 8.24048 5.99955 8.12044 6.014 8.00613Z" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 23C10.7764 23 10.0994 22.8687 9 22.5L6.89443 23.5528C5.56462 24.2177 4 23.2507 4 21.7639V19.5C1.84655 17.492 1 15.1767 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM6 18.6303L5.36395 18.0372C3.69087 16.4772 3 14.7331 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C11.0143 21 10.552 20.911 9.63595 20.6038L8.84847 20.3397L6 21.7639V18.6303Z" />
+                        </svg>
+
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100003761930043&locale=pt_BR">
+                        <svg viewBox="0 0 24 24" <rect fill="#fff"></rect></rect> xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H15V13.9999H17.0762C17.5066 13.9999 17.8887 13.7245 18.0249 13.3161L18.4679 11.9871C18.6298 11.5014 18.2683 10.9999 17.7564 10.9999H15V8.99992C15 8.49992 15.5 7.99992 16 7.99992H18C18.5523 7.99992 19 7.5522 19 6.99992V6.31393C19 5.99091 18.7937 5.7013 18.4813 5.61887C17.1705 5.27295 16 5.27295 16 5.27295C13.5 5.27295 12 6.99992 12 8.49992V10.9999H10C9.44772 10.9999 9 11.4476 9 11.9999V12.9999C9 13.5522 9.44771 13.9999 10 13.9999H12V21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z" />
+                        </svg>
+
+                    </a>
+                    <a href="mailto:gian.m.silver@gmail.com?subject=Quero%20um%20diagnóstico%20empresarial!">
+                        <svg viewBox="0 0 24 24" <rect fill="#fff"></rect></rect> xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20 4C21.6569 4 23 5.34315 23 7V17C23 18.6569 21.6569 20 20 20H4C2.34315 20 1 18.6569 1 17V7C1 5.34315 2.34315 4 4 4H20ZM19.2529 6H4.74718L11.3804 11.2367C11.7437 11.5236 12.2563 11.5236 12.6197 11.2367L19.2529 6ZM3 7.1688V17C3 17.5523 3.44772 18 4 18H20C20.5523 18 21 17.5523 21 17V7.16882L13.8589 12.8065C12.769 13.667 11.231 13.667 10.1411 12.8065L3 7.1688Z"/>
+                        </svg>
+
+                    </a>
+                </div>
+                
+                <div class="location">
+                        <div class="address">
+                            <img src="assets/svg/map-tag.svg" alt="">
+                            <h4>Endereço:</h4>
+                        </div>
+                        <p>Rua Júlio Kleine, 239, Itoupava Norte, Blumenau/SC, 89057-050.</p>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.030395190539!2d-49.06742302374649!3d-26.870775376672132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94df1f0dc8aef009%3A0xd445b40245fd2ad6!2sR.%20J%C3%BAlio%20Kleine%2C%20239%20-%20Fortaleza%2C%20Blumenau%20-%20SC%2C%2089057-050%2C%20Brazil!5e0!3m2!1sen!2sus!4v1702557979460!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="foot">
+                <div class="copy">
+                    <span>© Todos os direitos reservados | 2024</span>
+                </div>
             </div>
-            <div class="copy"></div>
         </footer>
     <script src="script.js"></script>
 </body>
