@@ -1,0 +1,20 @@
+{
+  "name": "v1.0",
+  "version": "1.0.0",
+  "description": "Site institucional Axys Consultoria Empresarial",
+  "main": "script.js",
+  "scripts": {
+    "test": "npm test",
+    "build": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gian-Mateus/axys.git"
+  },
+  "author": "Gian Mateus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gian-Mateus/axys/issues"
+  },
+  "homepage": "https://github.com/Gian-Mateus/axys#readme"
+}
