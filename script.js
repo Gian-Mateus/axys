@@ -64,3 +64,19 @@ setInterval(alternateItems, 3500);
 //         behavior: "smooth",
 //     });
 // });
+
+/* Animação NavBar */
+
+const btnNav = document.querySelector("#btn-nav");
+const navBar = document.querySelector("#container-header");
+
+btnNav.addEventListener('click', () =>{
+    if (navBar.classList.contains("onAnimate")){
+        navBar.classList.remove("onAnimate")
+        navBar.classList.add("offAnimate");
+    } else{
+        navBar.style.display = "block";
+        navBar.classList.remove("offAnimate")
+        navBar.classList.add("onAnimate");
+    }
+})

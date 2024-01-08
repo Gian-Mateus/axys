@@ -82,10 +82,51 @@ header button{
     display: flex;
     background-color: transparent;
     border: none;
+    z-index: 2;
 }
 header button > img{
-    width: 1rem;
-    
+    width: 1.75rem;
 }
 
+#container-header{
+    position: absolute;
+    display: none;
+    top: 0;
+    right: -150px;
+    width: 25%;
+    border-radius: 8px;
+    background-image: linear-gradient(to left, #000000, #0c0c0c, #141414, #1b1b1b, #212121);
+}
+#container-header > ul{
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+    padding: 20px;
+    margin-right: 10px;
+}
+
+.offAnimate{
+    animation: slidenavbarInvert 0.5s ease forwards;
+}
+.onAnimate{
+    animation: slidenavbar 0.45s ease forwards;
+}
+
+@keyframes slidenavbar {
+    to{
+        right: 0;
+    }
+}
+@keyframes slidenavbarInvert {
+    from{
+        right: 0;
+    }
+    to{
+        right: -150px;
+    }
+}
+
+header nav ul li a::before{
+    bottom: -4px;
+}
 }
