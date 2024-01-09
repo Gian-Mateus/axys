@@ -92,9 +92,11 @@ header button > img{
     position: absolute;
     display: none;
     top: 0;
-    right: -150px;
-    width: 25%;
+    right: -300px;
+    width: 45%;
+    height: 100vh;
     border-radius: 8px;
+    
     background-image: linear-gradient(to left, #000000, #0c0c0c, #141414, #1b1b1b, #212121);
 }
 #container-header > ul{
@@ -105,6 +107,11 @@ header button > img{
     margin-right: 10px;
 }
 
+#container-header > ul > li > a{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
 .offAnimate{
     animation: slidenavbarInvert 0.5s ease forwards;
 }
@@ -122,7 +129,7 @@ header button > img{
         right: 0;
     }
     to{
-        right: -150px;
+        right: -300px;
     }
 }
 
