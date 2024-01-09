@@ -90,7 +90,6 @@ header button > img{
 
 #container-header{
     position: absolute;
-    display: none;
     top: 0;
     right: -300px;
     width: 45%;

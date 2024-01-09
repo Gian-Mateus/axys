@@ -70,19 +70,21 @@ setInterval(alternateItems, 3500);
 const btnNav = document.querySelector("#btn-nav");
 const navBar = document.querySelector("#container-header");
 
-btnNav.addEventListener('click', () =>{
-    if (navBar.classList.contains("onAnimate")){
+btnNav.addEventListener('click', () => {
+    if (navBar.classList.contains("onAnimate")) {
         navBar.classList.remove("onAnimate")
         navBar.classList.add("offAnimate");
-        setInterval(() =>{
-            navBar.style.display = "none"
-        }, 1000)
-    } else{
-        navBar.style.display = "block";
+
+        setTimeout(() => {
+            navBar.style.display = "none";
+        }, 800); // Tempo correspondente à sua animação offAnimate
+    } else {
         navBar.classList.remove("offAnimate")
         navBar.classList.add("onAnimate");
+        navBar.style.display = "block";
     }
-})
+});
+
 
 
 function alterClasses(){
@@ -90,6 +92,9 @@ function alterClasses(){
         if(navBar.classList.contains("onAnimate")){
             navBar.classList.remove("onAnimate")
             navBar.classList.add("offAnimate");
+            setTimeout(() => {
+                navBar.style.display = "none";
+            }, 800);
         }
 
 }
