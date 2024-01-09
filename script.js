@@ -80,3 +80,13 @@ btnNav.addEventListener('click', () =>{
         navBar.classList.add("onAnimate");
     }
 })
+
+
+function alterClasses(){
+
+        if(navBar.classList.contains("onAnimate")){
+            navBar.classList.remove("onAnimate")
+            navBar.classList.add("offAnimate");
+        }
+
+}

@@ -113,7 +113,7 @@ header button > img{
     justify-content: center;
 }
 .offAnimate{
-    animation: slidenavbarInvert 0.5s ease forwards;
+    animation: slidenavbarInvert 800ms  ease forwards;
 }
 .onAnimate{
     animation: slidenavbar 0.45s ease forwards;
