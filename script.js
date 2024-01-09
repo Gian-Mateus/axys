@@ -74,6 +74,9 @@ btnNav.addEventListener('click', () =>{
     if (navBar.classList.contains("onAnimate")){
         navBar.classList.remove("onAnimate")
         navBar.classList.add("offAnimate");
+        setInterval(() =>{
+            navBar.style.display = "none"
+        }, 1000)
     } else{
         navBar.style.display = "block";
         navBar.classList.remove("offAnimate")
