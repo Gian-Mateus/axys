@@ -89,6 +89,7 @@ header button > img{
 }
 
 #container-header{
+    display: none;
     position: absolute;
     top: 0;
     right: -300px;

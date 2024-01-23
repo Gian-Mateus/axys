@@ -77,7 +77,7 @@ btnNav.addEventListener('click', () => {
 
         setTimeout(() => {
             navBar.style.display = "none";
-        }, 800); // Tempo correspondente à sua animação offAnimate
+        }, 800); // Tempo correspondente à animação offAnimate
     } else {
         navBar.classList.remove("offAnimate")
         navBar.classList.add("onAnimate");
