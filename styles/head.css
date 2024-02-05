@@ -96,7 +96,6 @@ header button > img{
     width: 45%;
     height: 100vh;
     border-radius: 8px;
-    
     background-image: linear-gradient(to left, #000000, #0c0c0c, #141414, #1b1b1b, #212121);
 }
 #container-header > ul{
@@ -105,12 +104,11 @@ header button > img{
     margin-top: 40px;
     padding: 20px;
     margin-right: 10px;
+    align-items: center;
 }
 
 #container-header > ul > li > a{
-    display: flex;
-    width: 100%;
-    justify-content: center;
+    display: inline;
 }
 .offAnimate{
     animation: slidenavbarInvert 800ms  ease forwards;

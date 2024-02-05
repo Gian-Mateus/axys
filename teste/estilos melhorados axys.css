@@ -1,0 +1,87 @@
+.carousel .item{
+    width: 60%;
+    max-width: 240px;
+    padding-bottom: 75%;
+    border-radius: 5px;
+    background-size: cover;
+    box-shadow: drop-shadow(0 0.4rem 1rem rgba(143, 143, 143, 0.5));
+    filter: drop-shadow(0 0.4rem 1rem rgba(143, 143, 143, 0.5));
+    transition: width 1.5s, height 1.5s;
+}
+
+.carousel .left{
+    width: 20%;
+    height: 15%;
+    transition: width 1s, height 1s;
+}
+.carousel .right{
+    width: 20%;
+    height: 15%;
+    transition: width 1s, height 1s;
+}
+.carousel .front{
+    width: 60%;
+    height: 45%;
+    z-index: 1;
+    transition: width 1.5s, height 1.5s;
+}
+
+.carousel .left,
+.carousel .right {
+    display: none;
+}
+
+.carousel .front {
+    display: flex;
+}
+
+.carousel .left {
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+}
+
+.carousel .right {
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+}
+
+.carousel .front {
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+}
+
+.carousel .left {
+    animation: carouselToLeftToCenter 1.5s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+.carousel .front {
+    animation: carouselToCenterToRight 1.5s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+.carousel .right {
+    animation: carouselToRightToLeft 1s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+@keyframes carouselToLeftToCenter {
+    100%{
+        width: 60%;
+        height: 45%;
+    }
+}
+
+@keyframes carouselToCenterToRight {
+    100%{
+        width: 60%;
+        height: 45%;
+    }
+}
+
+@keyframes carouselToRightToLeft {
+    100%{
+        width: 20%;
+        height: 15%;
+    }
+}
