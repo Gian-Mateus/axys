@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 599.48 358.38">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-size: 313.27px;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5 {
+        font-family: Lexend-Bold, Lexend;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        font-size: 139.13px;
+      }
+
+      .cls-4 {
+        font-size: 237.81px;
+      }
+
+      .cls-5 {
+        font-size: 194px;
+      }
+    </style>
+  </defs>
+  <g id="Camada_2-2" data-name="Camada 2">
+    <path class="cls-1" d="m383.26,164.51c-.04,5.5-.68,10-1.44,10h-3.11c-.96,0-1.72-4.5-1.68-10l.5-85.56c.03-5.5-3.62-7.4-8.11-4.23l-.47.33c-4.49,3.17-6.45,1.61-4.36-3.48l11.68-28.35c2.09-5.09,5.52-5.09,7.62,0l11.68,28.35c2.09,5.09.33,6.59-3.93,3.35s-7.77-1.4-7.8,4.1l-.58,85.49Z"/>
+    <path class="cls-1" d="m344.47,149.4c-5.5-.04-10-.69-10-1.44v-3.12c0-.96,4.5-1.72,10-1.69l85.2.51c5.5.03,7.42-3.62,4.26-8.13l-.34-.49c-3.16-4.5-1.59-6.46,3.5-4.36l28.21,11.7c5.08,2.11,5.08,5.56,0,7.66l-28.21,11.7c-5.08,2.11-6.59.34-3.36-3.93s1.38-7.79-4.12-7.83l-85.13-.58Z"/>
+    <text class="cls-5" transform="translate(207.53 197.16) scale(1.02 1)"><tspan x="0" y="0">x</tspan></text>
+    <text class="cls-3" transform="translate(324.14 252.99) scale(1.29 1)"><tspan x="0" y="0">y</tspan></text>
+    <text class="cls-2" transform="translate(.32 266.28) scale(1.03 1)"><tspan x="0" y="0">A</tspan></text>
+    <text class="cls-4" transform="translate(474.08 262.13) scale(1.07 1)"><tspan x="0" y="0">s</tspan></text>
+  </g>
+</svg>
